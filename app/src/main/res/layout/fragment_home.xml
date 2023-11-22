@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:background="@color/cards_background"
+>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Categorias:"
+
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <HorizontalScrollView
+                    android:scrollbars="none"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/restaurantes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            app:cardCornerRadius="8dp"
+                            >
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:id="@+id/restaurantes1"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:src="@drawable/ic_restaurantes"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:layout_marginLeft="5dp"
+                                    android:textAlignment="textEnd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Restaurantes"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/restaurantes1"
+                                    app:layout_constraintStart_toEndOf="@+id/restaurantes1"
+                                    app:layout_constraintTop_toTopOf="@+id/restaurantes1" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/hoteles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            app:cardCornerRadius="8dp"
+                            >
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:id="@+id/hoteles1"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:src="@drawable/ic_hoteles"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:layout_marginLeft="5dp"
+                                    android:textAlignment="textEnd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Hoteles"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/hoteles1"
+                                    app:layout_constraintStart_toEndOf="@+id/hoteles1"
+                                    app:layout_constraintTop_toTopOf="@+id/hoteles1" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cafeterias"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            app:cardCornerRadius="8dp"
+                            >
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:id="@+id/cafeteria"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:src="@drawable/ic_cafeteria"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:layout_marginLeft="5dp"
+                                    android:textAlignment="textEnd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cafeterías"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/cafeteria"
+                                    app:layout_constraintStart_toEndOf="@+id/cafeteria"
+                                    app:layout_constraintTop_toTopOf="@+id/cafeteria" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/miradores"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            app:cardCornerRadius="8dp"
+                            >
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:id="@+id/mirador"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:src="@drawable/ic_mirado"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:layout_marginLeft="5dp"
+                                    android:textAlignment="textEnd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Miradores"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/mirador"
+                                    app:layout_constraintStart_toEndOf="@+id/mirador"
+                                    app:layout_constraintTop_toTopOf="@+id/mirador" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            app:cardCornerRadius="8dp"
+                          >
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:id="@+id/balnearios"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:src="@drawable/ic_termales"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:layout_marginLeft="5dp"
+                                    android:textAlignment="textEnd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Balnearios"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/balnearios"
+                                    app:layout_constraintStart_toEndOf="@+id/balnearios"
+                                    app:layout_constraintTop_toTopOf="@+id/balnearios" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/templo_parroquial"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            app:cardCornerRadius="8dp"
+                            >
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:id="@+id/cultura"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:src="@drawable/ic_iglesia"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:layout_marginLeft="5dp"
+                                    android:textAlignment="textEnd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cultura y Fe"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/cultura"
+                                    app:layout_constraintStart_toEndOf="@+id/cultura"
+                                    app:layout_constraintTop_toTopOf="@+id/cultura" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/arte"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            app:cardCornerRadius="8dp"
+                            >
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:id="@+id/arte1"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:src="@drawable/ic_arte"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:layout_marginLeft="5dp"
+                                    android:textAlignment="textEnd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Arte Local"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/arte1"
+                                    app:layout_constraintStart_toEndOf="@+id/arte1"
+                                    app:layout_constraintTop_toTopOf="@+id/arte1" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/barberybelleza"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            app:cardCornerRadius="8dp"
+                            >
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/barberia"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/ic_barber"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:textAlignment="textEnd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Barber y Salones de Belleza"
+                                android:textSize="14sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/barberia"
+                                app:layout_constraintStart_toEndOf="@+id/barberia"
+                                app:layout_constraintTop_toTopOf="@+id/barberia" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp">
+            <TextView
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="¡Bienvenido a la magia de Tarqui, donde cada experiencia es una joya por descubrir!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/videosViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="540dp"
+                android:orientation="horizontal"
+
+                />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

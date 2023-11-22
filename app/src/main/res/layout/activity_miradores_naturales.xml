@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MiradoresNaturales"
+    android:background="@color/cards_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp"
+                    >
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="330dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/fondo"
+                            android:layout_width="match_parent"
+                            android:layout_height="270dp"
+                            android:background="@drawable/fondo"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="200dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            app:cardCornerRadius="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/fondo">
+
+                            <TextView
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:textSize="18sp"
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Descubre la Magia de Tarqui - Huila: Miradores Naturales" />
+                        </androidx.cardview.widget.CardView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:text="Sumérgete en la majestuosidad de Tarqui, un rincón pintoresco en el corazón de Huila que te invita a explorar sus tesoros naturales. Los miradores que adornan este municipio son ventanas a un paisaje que quita el aliento, ofreciéndote vistas panorámicas que capturan la esencia misma de la belleza huilense."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <!-- Primer par de CardViews -->
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            app:cardCornerRadius="8dp"
+                            >
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="200dp"
+                                android:layout_margin="8dp"
+                                app:cardBackgroundColor="@color/cardview_light_background"
+                                app:cardCornerRadius="8dp"
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    >
+                                <ImageView
+                                    android:scaleType="centerCrop"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/parquecruz"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="210dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                >
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:text="Parque las cruces 13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/imageView1"
+                                        android:layout_width="20dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/ic_ubicacion"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:text="El vergel – Maito"
+                                        android:textSize="14dp"
+                                        app:layout_constraintBottom_toBottomOf="@+id/imageView1"
+                                        app:layout_constraintStart_toEndOf="@+id/imageView1"
+                                        app:layout_constraintTop_toTopOf="@+id/imageView1" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <LinearLayout
+                                    android:layout_marginTop="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:gravity="end">
+
+                                    <!-- Otros elementos que puedas tener en el LinearLayout -->
+
+                                    <Button
+                                        android:id="@+id/btnpc"
+                                        android:text="Ver más"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:layout_weight="1"
+                                app:cardBackgroundColor="@color/cardview_light_background"
+                                app:cardCornerRadius="8dp"
+                                >
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="200dp"
+                                    android:layout_margin="8dp"
+                                    app:cardBackgroundColor="@color/cardview_light_background"
+                                    app:cardCornerRadius="8dp"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        >
+                                    <ImageView
+                                        android:scaleType="centerCrop"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/miradorp"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="210dp"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    >
+                                    <TextView
+                                        android:layout_marginTop="5dp"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"
+                                        android:text="Mirador la puerta al cielo "
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <ImageView
+                                            android:id="@+id/imageView2"
+                                            android:layout_width="20dp"
+                                            android:layout_height="30dp"
+                                            android:src="@drawable/ic_ubicacion"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:text="El vergel – Maito"
+                                            android:textSize="14dp"
+                                            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                                            app:layout_constraintStart_toEndOf="@+id/imageView2"
+                                            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:gravity="end"
+                                        android:layout_marginTop="15dp">
+
+                                        <!-- Otros elementos que puedas tener en el LinearLayout -->
+
+                                        <Button
+                                            android:id="@+id/btnmpc"
+                                            android:text="Ver más"
+                                            android:layout_marginTop="3dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            app:cardCornerRadius="8dp"
+                            >
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="200dp"
+                                android:layout_margin="8dp"
+                                app:cardBackgroundColor="@color/cardview_light_background"
+                                app:cardCornerRadius="8dp"
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    >
+                                <ImageView
+                                    android:scaleType="centerCrop"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/sanesteban"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="210dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                >
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:text="Mirador de pinos San Esteban"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/imageView3"
+                                        android:layout_width="20dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/ic_ubicacion"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:text="El vergel – Maito"
+                                        android:textSize="14dp"
+                                        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                                        app:layout_constraintStart_toEndOf="@+id/imageView3"
+                                        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:gravity="end">
+
+                                    <!-- Otros elementos que puedas tener en el LinearLayout -->
+
+                                    <Button
+                                        android:id="@+id/btnse"
+                                        android:text="Ver más"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_weight="1"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            app:cardCornerRadius="8dp"
+                            >
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="200dp"
+                                android:layout_margin="8dp"
+                                app:cardBackgroundColor="@color/cardview_light_background"
+                                app:cardCornerRadius="8dp"
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    >
+                                <ImageView
+                                    android:scaleType="centerCrop"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/miradorp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="210dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                >
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:text="Mirador entre cordilleras"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/imageView4"
+                                        android:layout_width="20dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/ic_ubicacion"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:text="El vergel – Maito"
+                                        android:textSize="14dp"
+                                        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                                        app:layout_constraintStart_toEndOf="@+id/imageView4"
+                                        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:gravity="end"
+                                    android:layout_marginTop="15dp">
+
+                                    <!-- Otros elementos que puedas tener en el LinearLayout -->
+
+                                    <Button
+                                        android:id="@+id/btnec"
+                                        android:text="Ver más"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

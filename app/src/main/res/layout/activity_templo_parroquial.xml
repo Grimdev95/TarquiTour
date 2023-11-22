@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cards_background"
+    app:layoutDescription="@xml/activity_templo_parroquial_scene7"
+    tools:context=".ActivityTemploParroquial">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iglesia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/iglesia"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_backarrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/fav"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_fav"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="20dp"
+                app:cardCornerRadius="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/nombre"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Iglesia de San Antonio de Pauda"/>
+
+                   <androidx.constraintlayout.widget.ConstraintLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <ImageView
+                           android:layout_marginLeft="5dp"
+                           android:layout_marginRight="10dp"
+                           android:id="@+id/imageView"
+                           android:layout_width="25dp"
+                           android:layout_height="25dp"
+                           android:src="@drawable/ic_marker"
+                           app:layout_constraintBottom_toBottomOf="parent"
+                           app:layout_constraintStart_toStartOf="parent"
+                           app:layout_constraintTop_toTopOf="parent" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Parque principal"
+                           android:textColor="@color/black"
+                           android:textSize="16sp"
+                           app:layout_constraintBottom_toBottomOf="parent"
+                           app:layout_constraintStart_toEndOf="@+id/imageView"
+                           app:layout_constraintTop_toTopOf="parent" />
+                   </androidx.constraintlayout.widget.ConstraintLayout>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Descripción:"
+                       android:textColor="@color/black"
+                       android:textSize="18sp"
+                       android:textStyle="bold"
+                       android:layout_marginTop="30dp"
+                       android:layout_marginLeft="10dp"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintStart_toEndOf="@+id/imageView"
+                       app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Como una joya arquitectónica y espiritual en el corazón de Tarqui, la Iglesia de San Antonio de Pauda invita a todos a sumergirse en la rica historia y la profunda fe que ha moldeado la vida de esta comunidad a lo largo de los años. Es un lugar de encuentro, reflexión y esperanza que continúa siendo una parte integral de la vida de quienes llaman hogar a este encantador municipio."/>
+               </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <com.jackandphantom.carouselrecyclerview.CarouselRecyclerview
+                android:id="@+id/carouselRecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

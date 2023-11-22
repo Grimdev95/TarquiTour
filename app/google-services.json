@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "587234810646",
+    "project_id": "tarquitour",
+    "storage_bucket": "tarquitour.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587234810646:android:8caa85773365fec19d8e37",
+        "android_client_info": {
+          "package_name": "com.grimjowd.tarquitour"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMyeHCScMa-Z59ge06u4LyKMAroRtoPiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

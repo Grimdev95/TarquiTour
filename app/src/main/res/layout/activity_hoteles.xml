@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hoteles"
+    android:background="@color/cards_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="310dp"
+                    >
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="330dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/fondo"
+                            android:layout_width="match_parent"
+                            android:layout_height="260dp"
+                            android:background="@drawable/hotelesfondo"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="200dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            app:cardBackgroundColor="@color/cardview_light_background"
+                            app:cardCornerRadius="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/fondo">
+
+                            <TextView
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:textSize="18sp"
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Descubre el Confort de Nuestros Hoteles." />
+                        </androidx.cardview.widget.CardView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_marginBottom="10dp"
+                            android:textSize="16sp"
+                            android:text="Explora una variedad de hoteles acogedores y cómodos que Tarqui tiene para ofrecer. Ya sea que estés planeando una escapada romántica, un viaje en familia o un viaje de negocios, nuestros hoteles están listos para recibirte. Disfruta de una estancia relajante en el corazón de esta encantadora región. Nuestros hoteles cuentan con comodidades modernas y un ambiente acogedor, lo que garantiza una experiencia inolvidable."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <GridLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    >
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_columnWeight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    >
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/hotelcasavictoria" />
+                    </LinearLayout>
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Hotel casa Victoria"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black" />
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lo importante es que se sienta como en su casa."
+                                android:textSize="14sp"/>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp">
+
+                                <ImageView
+                                    android:id="@+id/imageView"
+                                    android:layout_width="20dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/ic_ubicacion"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="Cra 6# 2-19, Tarqui"
+                                    android:textSize="12sp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                            <Button
+                                android:layout_marginRight="10dp"
+                                android:id="@+id/btnmacondo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="Ver Detalles"
+                                android:layout_gravity="end"
+                                android:textColor="@android:color/white" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_columnWeight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                   >
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/cafeteriafondo" />
+                    </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Macondo Cof-fit"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@android:color/black" />
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Café - Snacks - Market"
+                            android:textSize="14sp"/>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <ImageView
+                                android:id="@+id/imageView1"
+                                android:layout_width="20dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_ubicacion"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Parque principal, Tarqui."
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageView1"
+                                app:layout_constraintStart_toEndOf="@+id/imageView1"
+                                app:layout_constraintTop_toTopOf="@+id/imageView1" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <Button
+                            android:id="@+id/btnmacondos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ver Detalles"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_gravity="end"
+                            android:textColor="@android:color/white" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                </GridLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
